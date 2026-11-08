@@ -382,9 +382,27 @@ function findRowById_(sheet, id) {
 
 function addFollowUp_(id, d) {
   const due = addWorkingDays_(new Date(), CONFIG.REPLY_WORKING_DAYS);
-  sheet_(CONFIG.SHEET_FOLLOWUPS).appendRow([
+  const fu = sheet_(CONFIG.SHEET_FOLLOWUPS);
+  // Use the first empty row (the Done column already has checkboxes, so appendRow would go to the bottom).
+  const ids = fu.getRange(2, 1, Math.max(fu.getMaxRows() - 1, 1), 1).getValues();
+  const free = ids.findIndex(function (r) { return !r[0]; });
+  const row = free === -1 ? fu.getMaxRows() + 1 : free + 2;
+  fu.getRange(row, 1, 1, 5).setValues([[
     id, safe_('Reply to ' + d.name + ' (' + d.organisation + ')'), due, false, new Date(),
-  ]);
+  ]]);
+  fu.getRange(row, 4).insertCheckboxes();
+}
+
+/** Moves follow-up rows to the top with no gaps. Safe to run any time from the editor. */
+function tidyFollowUps() {
+  const fu = sheet_(CONFIG.SHEET_FOLLOWUPS);
+  const last = fu.getLastRow();
+  if (last < 2) return;
+  const range = fu.getRange(2, 1, last - 1, 5);
+  const rows = range.getValues().filter(function (r) { return r[0]; });
+  range.clearContent();
+  fu.getRange(2, 4, last - 1, 1).insertCheckboxes();
+  if (rows.length) fu.getRange(2, 1, rows.length, 5).setValues(rows);
 }
 
 function addWorkingDays_(date, n) {
