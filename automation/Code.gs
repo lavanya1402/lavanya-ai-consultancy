@@ -21,7 +21,7 @@
 const CONFIG = {
   OWNER_EMAIL: 'lavanya.sriva@gmail.com',
   BUSINESS_NAME: 'Lavanya AI Consultancy',
-  WEBSITE: 'https://lavanyaautomation.com',
+  WEBSITE: 'https://lavanya-ai-consultancy.vercel.app',
   REPLY_WORKING_DAYS: 2,
   BOOKING_LINK: '', // e.g. your Calendly or Google booking page; leave '' until ready
   WHATSAPP_LINK: 'https://wa.me/919821294499',
