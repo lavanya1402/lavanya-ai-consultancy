@@ -13,8 +13,8 @@ EMAIL = "lavanya.sriva@gmail.com"
 
 # (file, title, description, menu key)
 PAGE_LIST = [
-    ("index", "Lavanya AI Consultancy", "Practical AI learning for schools, colleges, universities and educators, and ready-made AI bots for businesses. AI drafts, a human decides.", ""),
-    ("businesses", "AI Bots for Businesses", "Ready-made AI bots set up on your own documents, data and rules: customer support, document Q&A, office assistants and more.", "who"),
+    ("index", "Lavanya AI Consultancy", "Practical AI learning for schools, colleges, universities and educators, and AI employees for businesses. AI drafts, a human decides.", ""),
+    ("businesses", "AI Employees for Businesses", "A team of AI bots for your business: receptionist, appointments, reminders, email, reviews and lead follow-up, with a person approving what matters.", "who"),
     ("schools", "AI for Schools", "Teacher AI foundations, assessment support and leadership orientation for schools, with a teacher reviewing every output.", "who"),
     ("higher-education", "AI for Colleges & Universities", "Student capability, faculty development and AI curriculum support for colleges and universities.", "who"),
     ("educators", "AI for Educators", "Learn AI through tasks you already do as an educator: lesson resources, question papers, rubrics and verification.", "who"),
@@ -37,7 +37,7 @@ MENU = [
         ("schools", "Schools", "Principals, owners and coordinators"),
         ("higher-education", "Colleges & Universities", "Deans, departments and faculty cells"),
         ("educators", "Educators", "Teachers and faculty members"),
-        ("businesses", "Businesses", "Ready-made AI bots and staff training"),
+        ("businesses", "Businesses", "AI employees and staff training"),
     ]),
     ("prog", "Programmes", [
         ("student-projects", "Student Projects & Portfolios", "Our signature student programme"),
@@ -115,7 +115,7 @@ FOOT = """</main>
     <div class="cols">
       <div class="stack">
         <p class="brandline">Lavanya AI Consultancy</p>
-        <p>Practical AI learning for education, and ready-made AI bots for business. AI drafts; a human decides.</p>
+        <p>Practical AI learning for education, and AI employees for business. AI drafts; a human decides.</p>
         <p>Email: <span style="color:var(--on-dark)">{email}</span> <button type="button" class="btn btn--line" style="min-height:32px;padding:.2rem .8rem;font-size:.8rem" data-copy="{email}">Copy</button></p>
       </div>
       <div><h4>Who we help</h4><ul>
@@ -123,7 +123,7 @@ FOOT = """</main>
         <li><a href="higher-education.html">Colleges &amp; Universities</a></li>
         <li><a href="educators.html">Educators</a></li>
         <li><a href="student-projects.html">Student Projects</a></li>
-        <li><a href="businesses.html">AI Bots for Businesses</a></li></ul></div>
+        <li><a href="businesses.html">AI Employees for Business</a></li></ul></div>
       <div><h4>Explore</h4><ul>
         <li><a href="programmes.html">Programmes</a></li>
         <li><a href="applied-ai-lab.html">Applied AI Lab</a></li>
