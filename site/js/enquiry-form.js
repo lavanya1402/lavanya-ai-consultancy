@@ -11,7 +11,7 @@
   'use strict';
 
   // Paste your Apps Script web app URL here after deploying Code.gs.
-  var ENDPOINT = 'PASTE-YOUR-WEB-APP-URL-HERE';
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbzNRx5apl2v-ZDBBRr2AAu2BG5uHwO3xtdXYH7sTmLHDcSrHTosBxfAUcl5ohsgiBWM/exec';
   var CONNECTED = ENDPOINT.indexOf('https://script.google.com/') === 0;
   var TIMEOUT_MS = 20000;
 
