@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lavanya-ai-consultancy.vercel.app/sitemap.xml

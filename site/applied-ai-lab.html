@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Applied AI Lab · Lavanya AI Consultancy</title>
+<meta name="description" content="AI applications built by Lavanya Srivastava: education tools, document intelligence, agents, evaluation and voice.">
+<link rel="canonical" href="https://lavanya-ai-consultancy.vercel.app/applied-ai-lab">
+<meta property="og:title" content="Applied AI Lab · Lavanya AI Consultancy">
+<meta property="og:description" content="AI applications built by Lavanya Srivastava: education tools, document intelligence, agents, evaluation and voice.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lavanya-ai-consultancy.vercel.app/applied-ai-lab">
+<meta property="og:image" content="https://lavanya-ai-consultancy.vercel.app/assets/lavanya.jpg">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="" width="42" height="42"><span>Lavanya AI<small>Consultancy</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span></button>
+    <nav class="nav" id="site-nav" aria-label="Main"><ul><li><button class="top" type="button" aria-expanded="false" aria-controls="sub-who">Who We Help</button><ul class="sub" id="sub-who"><li><a href="schools.html">Schools<small>Principals, owners and coordinators</small></a></li><li><a href="higher-education.html">Colleges & Universities<small>Deans, departments and faculty cells</small></a></li><li><a href="educators.html">Educators<small>Teachers and faculty members</small></a></li></ul></li><li><button class="top" type="button" aria-expanded="false" aria-controls="sub-prog">Programmes</button><ul class="sub" id="sub-prog"><li><a href="student-projects.html">Student Projects & Portfolios<small>Our signature student programme</small></a></li><li><a href="programmes.html">Programmes & Workshops<small>Compare every offering</small></a></li><li><a href="ai-readiness.html">AI Readiness Check<small>Eight questions, two minutes</small></a></li></ul></li><li><button class="top" type="button" aria-expanded="false" aria-controls="sub-work">Our Work</button><ul class="sub" id="sub-work"><li><a href="applied-ai-lab.html" aria-current="page">Applied AI Lab<small>Applications we have built</small></a></li><li><a href="teaching.html">Teaching & Learner Outcomes<small>How learning is taught and assessed</small></a></li></ul></li><li><a href="about.html">About</a></li><li><a href="resources.html">Resources</a></li></ul><a class="btn btn--gold nav-cta" href="contact.html">Discuss your requirement</a></nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="wrap head">
+    <p class="eyebrow">Our work · Applied AI Lab</p>
+    <h1>Applied AI Lab</h1>
+    <p class="lead">Applications Lavanya has designed and built. Each card says what problem it addresses, what it actually does, and its current status. Full walkthroughs open as presentations with step-by-step architecture.</p>
+    <p class="small">Status key: <strong>Live demo</strong> = anyone can try it online. <strong>Prototype</strong> = working and tested, shown on request or run locally.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+
+    <div class="cat">
+      <div class="head"><p class="eyebrow">Education AI</p><h2>Tools for teachers and learners</h2></div>
+      <div class="grid-2">
+        <article class="card work" id="preboard">
+          <figure><img src="assets/pre2.jpg" alt="Generated question paper with school header and Section A questions" loading="lazy"></figure>
+          <div class="body">
+            <span class="status">Prototype · demo on request</span>
+            <h3>Preboard Generator</h3>
+            <p><strong>Problem:</strong> a board-pattern preboard paper takes a teacher four to six hours.</p>
+            <p><strong>What it does:</strong> agents study the official CBSE 2026-27 sample paper and syllabus, propose a blueprint and draft new questions with marking schemes. The teacher approves every question; only approved questions reach the paper and answer key.</p>
+            <div class="tags"><span class="tag">AI agents</span><span class="tag">MCP server</span><span class="tag">Streamlit</span><span class="tag">PDF generation</span></div>
+            <div class="links"><a href="https://lavanya-portfolio-azure.vercel.app/present/preboard-generator.html">Walkthrough</a><a href="https://github.com/lavanya1402/preboard-generator-2310">Code</a><a href="contact.html?for=A%20school">Request a demo</a></div>
+          </div>
+        </article>
+        <article class="card work" id="videoquiz">
+          <figure><img src="assets/vq-quiz.jpg" alt="Quiz questions generated from a video transcript" loading="lazy"></figure>
+          <div class="body">
+            <span class="status">Prototype</span>
+            <h3>Video to summary and quiz</h3>
+            <p><strong>Problem:</strong> learners struggle to revise from long lecture videos.</p>
+            <p><strong>What it does:</strong> takes a video link, transcribes the speech, writes a summary and creates a multiple-choice quiz with answers to check understanding.</p>
+            <div class="tags"><span class="tag">Whisper</span><span class="tag">GPT summarisation</span><span class="tag">Streamlit</span></div>
+            <div class="links"><a href="https://github.com/lavanya1402/videoquiz-genai">Code</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="cat">
+      <div class="head"><p class="eyebrow">Document Intelligence &amp; RAG</p><h2>Answers from your own documents</h2></div>
+      <div class="grid-2">
+        <article class="card work" id="policy">
+          <figure><img src="assets/rag2.jpg" alt="Answer about earned leave with its source file and retrieved passages" loading="lazy"></figure>
+          <div class="body">
+            <span class="status status--live">Live demo</span>
+            <h3>Policy intelligence assistant</h3>
+            <p><strong>Problem:</strong> staff can't find the rule they need across long handbooks and policies, and wrong answers carry risk.</p>
+            <p><strong>What it does:</strong> combines keyword and meaning search, reranks the evidence, answers only from the retrieved passages and cites the source document.</p>
+            <div class="tags"><span class="tag">Hybrid RAG</span><span class="tag">BM25 + FAISS</span><span class="tag">Reranking</span><span class="tag">Citations</span></div>
+            <div class="links"><a href="https://rag-playgrounds.streamlit.app/">Try it</a><a href="https://lavanya-portfolio-azure.vercel.app/present/policy-rag.html">Walkthrough</a><a href="https://github.com/lavanya1402/HybridRetrieval-RAG">Code</a></div>
+          </div>
+        </article>
+        <article class="card work" id="summarizer">
+          <figure><img src="assets/hitl.jpg" alt="Review and Store screen where a person approves or rejects an AI summary" loading="lazy"></figure>
+          <div class="body">
+            <span class="status">Prototype</span>
+            <h3>Human-reviewed document summaries</h3>
+            <p><strong>Problem:</strong> AI summaries can't be stored as fact without someone checking them.</p>
+            <p><strong>What it does:</strong> extracts text from a PDF, drafts a summary, scores its quality, and asks a named reviewer to approve or reject it with a reason. Only approved summaries are stored.</p>
+            <div class="tags"><span class="tag">Human in the loop</span><span class="tag">PostgreSQL</span><span class="tag">Streamlit</span></div>
+            <div class="links"><a href="https://github.com/lavanya1402/human-in-the-loop-financial-document-summarizer">Code</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="cat">
+      <div class="head"><p class="eyebrow">Agents &amp; Workflow Automation</p><h2>AI that takes actions, within limits</h2></div>
+      <div class="grid-2">
+        <article class="card work" id="support">
+          <figure><img src="assets/abc.jpg" alt="Multi-agent customer support app with supervisor, order, policy and refund agents" loading="lazy"></figure>
+          <div class="body">
+            <span class="status status--live">Live demo</span>
+            <h3>Multi-agent customer support</h3>
+            <p><strong>Problem:</strong> support teams check orders, policies and refunds by hand, and automation without limits is risky.</p>
+            <p><strong>What it does:</strong> a supervisor agent plans each request and delegates to order, policy and refund agents. Refunds above a set limit pause for a person to approve.</p>
+            <div class="tags"><span class="tag">LangGraph</span><span class="tag">Agentic RAG</span><span class="tag">Guardrails</span></div>
+            <div class="links"><a href="https://agentic-ai-customer-support.streamlit.app/">Try it</a><a href="https://lavanya-portfolio-azure.vercel.app/present/customer-support-agents.html">Walkthrough</a><a href="https://github.com/lavanya1402/agentic-ai-customer-support">Code</a></div>
+          </div>
+        </article>
+        <article class="card work" id="mcp">
+          <div class="body">
+            <span class="status">Prototype</span>
+            <h3>Secure workplace assistant</h3>
+            <p><strong>Problem:</strong> an assistant that can email anyone on anyone's behalf is a security risk.</p>
+            <p><strong>What it does:</strong> an Azure AI agent schedules meetings and drafts emails through custom MCP tools. Each tool checks the user's role first, and a personal-data scan masks phone numbers, PAN, Aadhaar and card numbers, blocking high-risk emails.</p>
+            <div class="tags"><span class="tag">Azure AI Foundry</span><span class="tag">MCP</span><span class="tag">Role-based access</span><span class="tag">PII masking</span></div>
+            <div class="links"><a href="https://lavanya-portfolio-azure.vercel.app/present/secure-workplace-assistant.html">Walkthrough</a><a href="https://github.com/lavanya1402/lavanya-enterprise-mcp-server">Code</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="cat">
+      <div class="head"><p class="eyebrow">Human Review &amp; AI Evaluation</p><h2>Testing AI before trusting it</h2></div>
+      <div class="grid-2">
+        <article class="card work" id="benchlab">
+          <figure><img src="assets/sys.jpg" alt="Benchmark metrics and confusion matrices for two decision models" loading="lazy"></figure>
+          <div class="body">
+            <span class="status status--live">Live demo</span>
+            <h3>AI action safety benchmark</h3>
+            <p><strong>Problem:</strong> before an AI agent acts, someone must check the action against policy: allow it, ask for approval, or block it.</p>
+            <p><strong>What it does:</strong> sends identical policy questions to two decision models and scores them on a held-out set of 60 cases, including the errors that matter most, such as allowing actions that needed approval.</p>
+            <div class="tags"><span class="tag">Evaluation</span><span class="tag">AI governance</span><span class="tag">Reproducible runs</span></div>
+            <div class="links"><a href="https://jev-vs-laya.streamlit.app/">Try it</a><a href="https://lavanya-portfolio-azure.vercel.app/present/ai-action-safety-benchmark.html">Walkthrough</a><a href="https://github.com/lavanya1402/systemone-benchlab">Code</a></div>
+          </div>
+        </article>
+        <article class="card work" id="voice">
+          <figure><img src="assets/voice2.jpg" alt="Console showing live transcripts and transcript latency during a phone call" loading="lazy"></figure>
+          <div class="body">
+            <span class="status">Prototype</span>
+            <p class="eyebrow">Voice &amp; Multimodal</p>
+            <h3>Real-time voice AI</h3>
+            <p><strong>Problem:</strong> phone calls leave no live record, and voice assistants must hear words within a second.</p>
+            <p><strong>What it does:</strong> streams call audio from Twilio to Deepgram for live transcription, measures latency for every call and produces an AI call report on request.</p>
+            <div class="tags"><span class="tag">Twilio</span><span class="tag">WebSockets</span><span class="tag">Deepgram</span><span class="tag">FastAPI</span></div>
+            <div class="links"><a href="https://lavanya-portfolio-azure.vercel.app/present/realtime-voice-ai.html">Walkthrough</a><a href="https://github.com/lavanya1402/realtime-voice-ai-orchestrator">Code</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="band band--sand">
+  <div class="wrap grid-2" style="gap:3rem;align-items:center">
+    <div class="stack">
+      <h2>More experiments on GitHub</h2>
+      <p>The cards above are selected case studies. Lavanya's full collection, including earlier experiments, is on GitHub, each with a README, setup steps and a licence.</p>
+    </div>
+    <div class="actions"><a class="btn btn--line" href="https://github.com/lavanya1402">Open GitHub</a><a class="btn btn--gold" href="contact.html">Discuss an AI solution</a></div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div class="stack">
+        <p class="brandline">Lavanya AI Consultancy</p>
+        <p>Practical AI learning and solutions for education. AI drafts; a human decides.</p>
+        <p>Email: <span style="color:var(--on-dark)">lavanya.sriva@gmail.com</span> <button type="button" class="btn btn--line" style="min-height:32px;padding:.2rem .8rem;font-size:.8rem" data-copy="lavanya.sriva@gmail.com">Copy</button></p>
+      </div>
+      <div><h4>Who we help</h4><ul>
+        <li><a href="schools.html">Schools</a></li>
+        <li><a href="higher-education.html">Colleges &amp; Universities</a></li>
+        <li><a href="educators.html">Educators</a></li>
+        <li><a href="student-projects.html">Student Projects</a></li></ul></div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="applied-ai-lab.html">Applied AI Lab</a></li>
+        <li><a href="teaching.html">Teaching &amp; Outcomes</a></li>
+        <li><a href="about.html">About Lavanya</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Elsewhere</h4><ul>
+        <li><a href="https://www.linkedin.com/in/lavanya-srivastava/">LinkedIn</a></li>
+        <li><a href="https://github.com/lavanya1402">GitHub</a></li>
+        <li><a href="https://lavanya-portfolio-azure.vercel.app/">Project portfolio</a></li></ul></div>
+    </div>
+    <div class="base">
+      <span>© 2026 Lavanya AI Consultancy</span>
+      <span><a href="privacy.html">Privacy &amp; Cookies</a> · <a href="terms.html">Terms</a> · <a href="cancellation.html">Cancellation &amp; Refunds</a></span>
+    </div>
+  </div>
+</footer>
+<script src="js/site.js" defer></script>
+
+</body>
+</html>

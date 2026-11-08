@@ -1,0 +1,44 @@
+<!-- Enquiry form for the website. Paste where the form should appear.
+     For the Singapore page, change the hidden "source" value to education2-singapore-2026. -->
+<form data-enquiry-form novalidate class="enquiry-form">
+  <input type="hidden" name="source" value="website">
+  <!-- Spam trap: hidden from people, filled by bots. Do not remove. -->
+  <input type="text" name="website" tabindex="-1" autocomplete="off" hidden aria-hidden="true">
+
+  <label>Full name *
+    <input type="text" name="name" autocomplete="name" required>
+  </label>
+  <label>Work email *
+    <input type="email" name="email" autocomplete="email" required>
+  </label>
+  <label>Institution or company *
+    <input type="text" name="organisation" autocomplete="organization" required>
+  </label>
+  <label>Country *
+    <input type="text" name="country" autocomplete="country-name" required>
+  </label>
+  <label>I am enquiring for
+    <select name="segment">
+      <option value="">Choose one</option>
+      <option>A school</option>
+      <option>A college or university</option>
+      <option>Educator or student training</option>
+      <option>A business: automation or consulting</option>
+      <option>A business: staff training</option>
+      <option>Something else</option>
+    </select>
+  </label>
+  <label>What would you like to achieve? *
+    <textarea name="requirement" rows="4" required></textarea>
+  </label>
+  <label>Phone or WhatsApp (optional)
+    <input type="tel" name="phone" autocomplete="tel">
+  </label>
+  <label class="checkbox">
+    <input type="checkbox" name="marketing">
+    Send me occasional updates on new programmes. Optional; unsubscribe any time.
+  </label>
+  <button type="submit">Send requirement</button>
+  <p class="small">We use these details only to reply to you. See our <a href="/privacy">Privacy Policy</a>.</p>
+</form>
+<script src="/js/enquiry-form.js" defer></script>
