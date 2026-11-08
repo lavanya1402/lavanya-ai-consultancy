@@ -14,7 +14,7 @@ EMAIL = "lavanya.sriva@gmail.com"
 # (file, title, description, menu key)
 PAGE_LIST = [
     ("index", "Lavanya AI Consultancy", "Practical AI learning for schools, colleges, universities and educators, and AI employees for businesses. AI drafts, a human decides.", ""),
-    ("businesses", "AI Employees for Businesses", "A team of AI bots for your business: receptionist, appointments, reminders, email, reviews and lead follow-up, with a person approving what matters.", "who"),
+    ("businesses", "AI Employees & Business Automation", "Your business, your AI workforce: AI receptionist, email, sales, research, operations and education assistants, working 24/7 with a person approving what matters.", "ai"),
     ("schools", "AI for Schools", "Teacher AI foundations, assessment support and leadership orientation for schools, with a teacher reviewing every output.", "who"),
     ("higher-education", "AI for Colleges & Universities", "Student capability, faculty development and AI curriculum support for colleges and universities.", "who"),
     ("educators", "AI for Educators", "Learn AI through tasks you already do as an educator: lesson resources, question papers, rubrics and verification.", "who"),
@@ -37,8 +37,8 @@ MENU = [
         ("schools", "Schools", "Principals, owners and coordinators"),
         ("higher-education", "Colleges & Universities", "Deans, departments and faculty cells"),
         ("educators", "Educators", "Teachers and faculty members"),
-        ("businesses", "Businesses", "AI employees and staff training"),
     ]),
+    ("ai", "AI Employees", None),
     ("prog", "Programmes", [
         ("student-projects", "Student Projects & Portfolios", "Our signature student programme"),
         ("programmes", "Programmes & Workshops", "Compare every offering"),
@@ -57,7 +57,7 @@ def nav(current, key):
     items = []
     for k, label, sub in MENU:
         if sub is None:
-            href = "about.html" if k == "about" else "resources.html"
+            href = {"about": "about.html", "res": "resources.html", "ai": "businesses.html"}[k]
             cur = ' aria-current="page"' if key == k else ""
             items.append(f'<li><a href="{href}"{cur}>{label}</a></li>')
             continue
@@ -157,6 +157,8 @@ def build():
         extra = '<script src="js/enquiry-form.js" defer></script>' if "data-enquiry-form" in body else ""
         if "data-readiness" in body:
             extra += '\n<script src="js/readiness.js" defer></script>'
+        if "data-demo" in body or 'id="roi-form"' in body:
+            extra += '\n<script src="js/ai-employees.js" defer></script>'
         html = HEAD.format(title=full_title, desc=desc, url=url, domain=DOMAIN, nav=nav(f, key)) + body + FOOT.format(email=EMAIL, extra=extra)
         (SITE / f"{f}.html").write_text(html, encoding="utf-8")
     urls = "".join(f"<url><loc>{DOMAIN}/{'' if f == 'index' else f}</loc></url>" for f, *_ in PAGE_LIST if f != "singapore")
